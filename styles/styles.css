@@ -90,6 +90,7 @@ nav li a{
 main{
   max-width: 1140px;
   margin: 0 auto;
+  padding: 50px;
 }
 
 /* teams section styles */
@@ -100,7 +101,7 @@ main{
 
 .teams-img-container{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.3rem;
 }
 
@@ -128,6 +129,74 @@ main{
   font-weight: 700;
 }
 
+.teams-content-description{
+  color: #727272;
+}
+
+/* features section styles */
+
+/* facts section styles */
+.facts-container-title{
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.facts-container-description{
+  color: #727272;
+}
+
+.facts-card-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.facts-card-container .card{
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+  text-align: center;
+  padding: 20px;
+}
+
+.facts-card-container .card-stats{
+  font-weight: 2.8rem;
+  color: #424242;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.facts-card-container .card-title{
+  color: #727272;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 5px;
+}
+
+/* sponsors section styles */
+.sponsors-container{
+  text-align: center;
+}
+
+.sponsors-title{
+  color: #131313;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.sponsors-description{
+  color: #727272;
+}
+
+.sponsors-img{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sponsors-img img{
+  max-width: 100px;
+  margin-top: 10px;
+}
+
 /* responsive media query */
 /* mobile devices */
 @media screen and (max-width:576px) {
@@ -135,13 +204,43 @@ main{
     padding: 20px;
   }
 
-  nav{
+  nav,
+  .teams-container,
+  .facts-card-container{
     flex-direction: column;
+  }
+
+  .teams-img-container{
+    grid-template-columns: 1fr;
+  }
+
+  .teams-content,
+  .facts-card-container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .facts-card-container .card{
+    margin-top: 10px;
+  }
+
+  .sponsors-img{
+    flex-direction: column;
+    align-items: center;
   }
 }
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
-  nav{
+  nav,
+  .teams-container{
     flex-direction: column;
+  }
+
+  .card{
+    margin: 10px;
+  }
+
+  .sponsors-img img{
+    max-width: 80px;
   }
 }
