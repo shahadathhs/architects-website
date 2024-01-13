@@ -105,6 +105,10 @@ main{
   gap: 1.3rem;
 }
 
+.teams-img-container img{
+  width: 100%;
+}
+
 .teams-content{
   padding-left: 5.5rem;
   padding-right: 5.5rem;
@@ -317,5 +321,11 @@ footer{
 
   .sponsors-img img{
     max-width: 80px;
+  }
+
+  .features-container{
+    gap: 20px;
+    margin-top: 60px;
+    padding: 15px;
   }
 }
